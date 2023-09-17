@@ -5,7 +5,7 @@ FROM debian:bookworm-slim AS build
 ARG SAMBA_VERSION
 
 # Environment variables
-ENV SAMBA_VERSION=${SAMBA_VERSION}
+ENV SAMBA_VERSION=4.19.0
 ENV DEBIAN_FRONTEND="noninteractive"
 ENV PATH="$PATH:/usr/local/samba/bin:/usr/local/samba/sbin"
 
